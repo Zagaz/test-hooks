@@ -1,24 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Import React and the useState hook
 
+// Functional component that receives `value` as a prop
 const NumberComponent = ({ value }) => {
+  // Declare a state variable `number`, initialized to 0
   const [number, setNumber] = useState(0);
 
+  // Handler function for button clicks
   function clickHandler(n, action) {
     if (action === 'sub') {
-      setNumber(prev => Math.max(0, prev - n)); // garante R+
+      // If the action is subtract, reduce the number but don't allow it to go below 0
+      setNumber(prev => Math.max(0, prev - n));
     } else if (action === 'add') {
+      // If the action is add, increase the number by n
       setNumber(prev => prev + n);
     }
   }
 
   return (
     <>
-      <hr />
-      <button onClick={() => clickHandler(value, 'sub')}> -{value} </button>
+      <hr /> {/* Horizontal line for visual separation */}
+
+      {/* Button to subtract `value` from the current number */}
+      <button onClick={() => clickHandler(value, 'sub')}>
+        -{value}
+      </button>
+
+      {/* Display the current number */}
       <span> {number} </span>
-      <button onClick={() => clickHandler(value, 'add')}> +{value} </button>
+
+      {/* Button to add `value` to the current number */}
+      <button onClick={() => clickHandler(value, 'add')}>
+        +{value}
+      </button>
     </>
   );
 };
 
-export default NumberComponent;
+export default NumberComponent; // Export the component for use elsewhere
