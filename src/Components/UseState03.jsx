@@ -26,7 +26,7 @@ const UseState03 = () => {
   };
 
   // Array of button values, including both numbers and the "clear" action
-  const buttons = [1, 5, 10, 'clear'];
+  const buttons = [1, 5, 10,50,100, 'clear'];
 
   return (
     <>
