@@ -8,9 +8,9 @@ import UseState04 from './Components/UseState04'
 function App() {
   return(
     <>
-    <UseState04/>
-    <UseState03/> 
-    <UseState02/>
+    {/* <UseState02/> */}
+    {/* <UseState03/>  */}
+    <UseState04 />
     </>
 
   )
