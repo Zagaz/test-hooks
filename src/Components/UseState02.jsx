@@ -36,6 +36,7 @@ function App() {
 
   return (
     <>
+    <hr />
       <h3>Use Statate Exercise 2</h3>
 
       {/* Controlled input bound to the `text` state and referenced via `inputRef` */}
