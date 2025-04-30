@@ -1,38 +1,47 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react';
 
 /**
- * Exercice 03
+ * Exercise 03
  * 
- * Learns how to passa parameters on a funcion 
- * 
+ * Demonstrates how to pass parameters to a function
+ * to update component state using useState, with dynamic buttons.
  */
 
 const UseState03 = () => {
+  // State to track the current count
+  const [count, setCount] = useState(0);
 
-  const [number, setNumber] = useState(() => { return 0 })
-
-  function nameNumber(n) {
-    if (n === "clear") {
-      setNumber(0)
-
+  /**
+   * Updates the count based on the provided value.
+   * Resets to 0 if the value is "clear".
+   * 
+   * @param {number|string} value - Value to add or "clear" to reset
+   */
+  const updateCount = (value) => {
+    if (value === 'clear') {
+      setCount(0);
     } else {
-      setNumber(prev => prev + n)
+      setCount(prevCount => prevCount + value);
     }
-  }
+  };
+
+  // Array of button values, including both numbers and the "clear" action
+  const buttons = [1, 5, 10, 'clear'];
+
   return (
     <>
       <hr />
-      <h3>Use Statate Exercise 3</h3>
-      <h4>Number: {number}</h4>
+      <h3>useState Exercise 3</h3>
+      <h4>Count: {count}</h4>
 
-      <button onClick={() => { nameNumber(1) }}>+1</button>
-      <button onClick={() => { nameNumber(5) }}>+5</button>
-      <button onClick={() => { nameNumber(10) }}>+10</button>
-      <button onClick={() => { nameNumber('clear') }}>Clear</button>
+      {/* Render buttons dynamically from the array */}
+      {buttons.map((val, index) => (
+        <button key={index} onClick={() => updateCount(val)} >
+          {val === 'clear' ? 'Clear' : `+${val}`}
+        </button>
+      ))}
     </>
+  );
+};
 
-  )
-}
-
-export default UseState03
+export default UseState03;
