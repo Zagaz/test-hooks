@@ -4,7 +4,7 @@ import { useState } from 'react'
 /**
  * Exercice 03
  * 
- * Learns how to passa parameters on a function
+ * Learns how to passa parameters on a funcion 
  * 
  */
 
