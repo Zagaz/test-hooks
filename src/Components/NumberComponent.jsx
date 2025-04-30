@@ -1,7 +1,11 @@
 import React, { useState } from 'react'; // Import React and the useState hook
 
 // Functional component that receives `value` as a prop
-const NumberComponent = ({ value }) => {
+const NumberComponent = ({ value = 1 }) => {
+    // If `value` is negative, make it positive for consistent behavior
+    if (value < 0){
+        value = -value
+    }
   // Declare a state variable `number`, initialized to 0
   const [number, setNumber] = useState(0);
 
