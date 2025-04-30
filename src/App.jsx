@@ -12,9 +12,9 @@ function App() {
     {/* <UseState02/> */}
     {/* <UseState03/>  */}
     {/* <UseState04 /> */}
-    <NumberComponent value={1}/>
-    <NumberComponent value={5}/>
-    <NumberComponent value={10}/>
+    {/* <NumberComponent value={1}/> */}
+    {/* <NumberComponent value={5}/> */}
+    {/* <NumberComponent value={10}/> */}
     </>
 
   )
