@@ -3,7 +3,7 @@ import './App.css'
 import UseState02 from './Components/UseState02'
 import UseState03 from './Components/UseState03'
 import UseState04 from './Components/UseState04'
-import NumberComponent from './Components/NumberComponent'
+import UseState05 from './Components/UseState05'
 
 
 function App() {
@@ -12,10 +12,13 @@ function App() {
     {/* <UseState02/> */}
     {/* <UseState03/>  */}
     {/* <UseState04 /> */}
-    <NumberComponent value={-7}/>
-    <NumberComponent value={5}/>
-    <NumberComponent value={10}/>
-    <NumberComponent value={10}/>
+
+    {/* <UseState05 value={-7}/>
+    <UseState05 value={5}/>
+    <UseState05 value={10}/>
+    <UseState05 value={10}/> */}
+
+    
     </>
 
   )
