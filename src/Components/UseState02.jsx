@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      <h3>Inputs</h3>
+      <h3>Use Statate Exercise 2</h3>
 
       {/* Controlled input bound to the `text` state and referenced via `inputRef` */}
       <input
