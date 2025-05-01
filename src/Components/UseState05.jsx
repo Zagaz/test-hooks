@@ -1,7 +1,7 @@
 import React, { useState } from 'react'; // Import React and the useState hook
 
 // Functional component that receives `value` as a prop
-const UseState05= ({ value = 1 }) => {
+const UseState05 = ({ value = 1 }) => {
     // If `value` is negative, make it positive for consistent behavior
     if (value < 0){
         value = -value
@@ -40,4 +40,4 @@ const UseState05= ({ value = 1 }) => {
   );
 };
 
-export default NumberComponent; // Export the component for use elsewhere
+export default UseState05 ; // Export the component for use elsewhere
