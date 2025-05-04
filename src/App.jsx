@@ -15,6 +15,8 @@ import UseState06Father  from './Components/UseState06Father'
 function App() {
   return(
     <>
+    <h1>React exercises</h1>
+    <hr />
     {/* <UseState02/> */}
     {/* <UseState03/>  */}
     {/* <UseState04 /> */}
@@ -26,7 +28,7 @@ function App() {
   
    {/* <UseState06Father /> */}
 
-
+<hr />
     </>
 
   )
