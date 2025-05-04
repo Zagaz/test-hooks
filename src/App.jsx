@@ -19,7 +19,8 @@ function App() {
     <UseState05 value={5}/>
     <UseState05 value={10}/>
     <UseState05 value={10}/> */}
-   <UseState06Father />
+  
+   {/* <UseState06Father /> */}
 
 
     </>
