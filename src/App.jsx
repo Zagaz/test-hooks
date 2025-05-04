@@ -6,7 +6,7 @@ import UseState04 from './Components/UseState04'
 // Functional component that receives `value` as a prop
 import UseState05 from './Components/UseState05'
 
-// Lift The State UP => Pass the data from child to father - ex003
+//Lift The State UP => Pass the data from child to father - ex003
 //https://youtu.be/dX_ww7J06Wk?si=O3nvqsohG1y-pk3r
 import UseState06Father  from './Components/UseState06Father'
 
